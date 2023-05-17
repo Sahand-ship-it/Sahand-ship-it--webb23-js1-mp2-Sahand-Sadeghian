@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sten, Sax, Påse</title>
+  <style>
+    #game {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      font-size: 24px;
+    }
+    
+    #game input[type="text"], #game button {
+      margin-bottom: 10px;
+    }
+    
+    #game img {
+      width: 100px;
+      height: 100px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+<script src="script.js"></script>
+</head>
+<body>
+    <div id="gameHistory"></div>
+     <div id="game">
+    <h1>Sten, Sax, Påse</h1>
+    <button onclick="startGame()">Starta spelet</button>
+    <label for="playerName">Ange ditt namn:</label>
+    
+     <input type="text" id="playerName" />
+    <div id="score"></div>
+    <div id="choices">
+      <img src="rock.png" alt="Sten" onclick="playerChoice('rock')" />
+      <img src="sax.jpg" alt="Sax" onclick="playerChoice('scissors')" />
+      <img src="paper.jpg" alt="Påse" onclick="playerChoice('paper')" />
+    </div>
+    <div id="result"></div>
+    <button onclick="resetGame()">Starta om spelet</button>
+  </div>
+
+  
+
+   
